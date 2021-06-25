@@ -1,0 +1,45 @@
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+p {
+	font-size: 24px;
+	color: white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRID LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.wrapper {
+	height: auto;
+	display: grid;
+	grid-template-rows: 200px 100px auto 200px;
+	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+	background-color: #202121;
+}
+
+.header {
+	grid-column:1/8;
+	grid-row: 1;
+	background-color: #202121;
+}
+
+.navigation {
+	grid-column:1/8;
+	grid-row: 2;
+	background-color: #000;
+}
+
+.body {
+	grid-column: 2/6;
+	grid-row: 3;
+	min-height:600px;
+	background-color: #ff0000;
+}
+
+.footer {
+	grid-column:1/8;
+	grid-row: 4;
+	background-color: #000;
+}
