@@ -4,11 +4,6 @@ body {
 	padding:0px;
 }
 
-p {
-	font-size: 24px;
-	color: white;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRID LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .wrapper {
@@ -34,7 +29,7 @@ p {
 	grid-column: 1/8;
 	grid-row: 2;
 	min-height:600px;
-	background-color: #ff0000;
+	background: url("../images/background.jpg");
 	background-size: 100% 100%;
 	background-position: center;
 }
@@ -46,13 +41,18 @@ p {
 	padding: 5px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BURGER MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#HeadingLogo {
+	position: relative;
+	left: 100px;
+}
 
 .footer #SocialMedia {
 	position: relative;
 	top: 115px;
-	left: 1175px;
-	width: 75px;
+	left: 1200px;
+	width: 65px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BURGER MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
