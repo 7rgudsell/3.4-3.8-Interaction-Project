@@ -1,4 +1,7 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 body {
 	margin:0px;
 	padding:0px;
@@ -16,7 +19,8 @@ p {
 	display: grid;
 	grid-template-rows: 200px 100px auto 200px;
 	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-	background-color: #202121;
+	background-color: #1c1d1d;
+	border: 2px solid black;
 }
 
 .header {
@@ -29,14 +33,17 @@ p {
 	grid-column:1/8;
 	grid-row: 2;
 	background-color: #202121;
-	border: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding:10px;
+	padding-left: 20%;
 }
 
 .body {
 	grid-column: 2/6;
 	grid-row: 3;
 	min-height:600px;
-	background: url("../images/background.jpg");
+	background: url("../images/background.png");
 	background-size: 100% 100%;
 	background-position: center;
 }
@@ -45,7 +52,55 @@ p {
 	grid-column:1/8;
 	grid-row: 4;
 	background-color: #202121;
-	border: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding:10px;
+	display:grid;
+	grid-template-columns: 50% 50%;
+}
+
+.foot1 {
+	grid-column: 1;
+}
+
+.foot2 {
+	grid-column: 2;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.navigation a {
+	float: left;
+	font-size: 16px;
+	color: #FFFAFA;
+	font-family: Montserrat;
+	text-align: center;
+	text-decoration: none;
+	padding: 0px 10px;
+}
+
+.footer p {
+	font-family: Poppins;
+	font-size: 14px;
+	transition: color 0.3s ease;
+	color: #FFFAFA;
+	font-family: Poppins;
+	font-size: 14px;
+}
+
+
+.footer a {
+	font-family: Poppins;
+	font-size: 14px;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	color: #FFFAFA;
+	font-family: Poppins;
+	font-size: 14px;
+}
+
+.footer a:hover{
+	color: tomato;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -56,8 +111,9 @@ p {
 }
 
 .footer #SocialMedia {
+	display: inline-block;
 	position: relative;
-	top: 115px;
-	left: 1200px;
 	width: 65px;
+	float:right;
+	top:60%;
 }
