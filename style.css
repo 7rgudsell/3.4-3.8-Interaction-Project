@@ -77,13 +77,11 @@ h3 {
 }
 
 .footer p {
-	font-family: Poppins;
+	font-family: Montserrat;
 	font-size: 14px;
 	text-decoration: none;
 	transition: color 0.3s ease;
 	color: #FFFAFA;
-	font-family: Poppins;
-	font-size: 14px;
 }
 
 .header h1, .header a {
@@ -95,13 +93,11 @@ h3 {
 }
 
 .footer a {
-	font-family: Poppins;
+	font-family: Montserrat;
 	font-size: 14px;
 	text-decoration: none;
 	transition: color 0.3s ease;
 	color: #FFFAFA;
-	font-family: Poppins;
-	font-size: 14px;
 }
 
 .footer a:hover, .header a:hover{
