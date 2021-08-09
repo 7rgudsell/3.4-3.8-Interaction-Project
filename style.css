@@ -1,12 +1,11 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body {
 	margin:0px;
 	padding:0px;
-}
-
-p {
-	font-size: 24px;
-	color: white;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRID LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -22,6 +21,18 @@ p {
 	grid-column:1/8;
 	grid-row: 1;
 	background-color: #202121;
+	display:grid;
+	grid-template-columns: 50% 50%;
+}
+
+.head1 {
+	grid-column: 1;
+}
+
+.head2 {
+	grid-column: 2;
+	padding-right: 30px;
+	padding-top:20px;
 }
 
 .navigation {
@@ -34,25 +45,269 @@ p {
 	grid-column: 1/8;
 	grid-row: 2;
 	min-height:600px;
-	background-color: #ff0000;
+	background: url("../images/background.jpg");
 	background-size: 100% 100%;
 	background-position: center;
+	display: grid;
+	grid-template-rows: 75px auto 75px;
+	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+}
+
+.content {
+	grid-column:2/6;
+	grid-row: 2;
+	z-index:3;
+	min-height:400px;
+	background-color:grey;
+	opacity: 80%;
+	padding: 5px;
+	border: 3px solid black;
 }
 
 .footer {
 	grid-column:1/8;
 	grid-row: 3;
 	background-color: #202121;
-	padding: 5px;
+	padding: 10px;
+	display:grid;
+	grid-template-columns: 50% 50%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BURGER MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.foot1 {
+	grid-column: 1;
+}
+
+.foot2 {
+	grid-column: 2;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+h1 {
+	font-family: Montserrat; /* CHANGE FONT */
+	font-size: 48px;
+}
+
+.h1span {
+	background: #202121;
+	border: 1px solid black;
+	color:white;
+}
+
+h3 {
+	font-family: Montserrat;
+	font-size: 24px;
+	margin: 0px;
+	right:0px;
+}
+
+.footer p {
+	font-family: Poppins;
+	font-size: 14px;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	color: #FFFAFA;
+	font-family: Poppins;
+	font-size: 14px;
+}
+
+.head2 form, .head2 input {
+	float:right;
+	font-size:24px;
+	cursor:pointer;
+	margin-top: 5px;
+}
+
+.header h1, .header a {
+	text-decoration:none;
+	font-family: Montserrat;
+	color: white;
+	transition: color 0.3s ease;
+	font-size: 56px;
+	margin:0;
+}
+
+.footer a {
+	font-family: Poppins;
+	font-size: 14px;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	color: #FFFAFA;
+	font-family: Poppins;
+	font-size: 14px;
+}
+
+.footer a:hover, .header a:hover{
+	color: tomato;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DBASE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+heading1 {
+	width: 99%;
+	display: grid;
+	grid-template-columns: 23% 22% 22% 21% 7% 5%;
+    grid-template-rows: 50px;
+	margin: 1px;
+	padding-left:1%;
+}
+
+loginheading1 {
+	width: 99%;
+	display: grid;
+	grid-template-columns: 5% 20% 20% 20% 20% 7% 5%;
+    grid-template-rows: 50px;
+	margin: 1px;
+	padding-left:1%;
+}
+
+Title1, Album1, Artist1, Genre1, Duration1, Size1 {
+	text-align:left;
+}
+
+Duration1, Size1 {
+	text-align:right;
+}
+
+#smallh1 {
+	font-size:18px;
+}
+
+heading2{
+	width: 99%;
+	display: grid;
+	grid-template-columns: 23% 22% 22% 22% 5% 5%;
+    grid-template-rows: 50px;
+	margin: 1px;
+	border: 1px solid black;
+	padding-left:1%;
+	background-color: white;
+}
+
+loginheading2{
+	width: 99%;
+	display: grid;
+	grid-template-columns: 5% 20% 20% 20% 20% 7% 5%;
+    grid-template-rows: 50px;
+	margin: 1px;
+	border: 1px solid black;
+	padding-left:1%;
+	background-color: white;
+}
+
+Songid2, Title2, Album2, Artist2, Genre2, Duration2, Size2 {
+	text-align:left;
+	font-family: Poppins;
+	font-size: 11px;
+	color: black;
+}
+
+Duration2, Size2 {
+	text-align:right;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOGIN/ADMIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#loginform {
+	display:grid;
+	grid-template-columns:300px 800px;
+	grid-template-rows: 75px 75px;
+	padding:0;
+	margin:0;
+}
+
+#inputbox {
+	width: 70%;
+	height:60px;
+	font-size:48px;
+}
+
+#submitbutton {
+	width:80px;
+	height:20px;
+}
+
+.admin-content {
+	display:grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto auto;
+	padding:0px;
+	margin:0px;
+}
+
+.admin-show-users {
+	display:grid;
+	grid-template-rows: 75px auto;
+	border: 2px solid black;
+	padding-left: 2%;
+}
+
+.admin-add-users {
+	grid-column: 1/3;
+	border: 2px solid black;
+	padding-left: 2%;
+}
+
+.admin-update-users {
+	border: 2px solid black;
+	padding-left: 2%;
+}
+
+.admin-delete-users {
+	grid-column: 1/3;
+	border: 2px solid black;
+	padding-left: 2%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#HeadingLogo {
+	position: relative;
+	margin-left: 100px;
+}
 
 .footer #SocialMedia {
+	display: inline-block;
 	position: relative;
-	top: 115px;
-	left: 1175px;
-	width: 75px;
+	width: 65px;
+	float:right;
+	top:60%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BACKTOTOP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.backtotop {
+	display: block;
+	position: fixed;
+	top: 680px;
+	left: 95%;
+	padding: 15px;
+	outline:none;
+	border: 3px solid #FFFAFA;
+	border-radius: 50px;
+	background-color: black;
+	cursor:pointer;
+	opacity: 88%;
+	z-index: 99;
+	text-align: center;
+	text-decoration:none;
+	list-style-type:none;
+	line-height:22px;
+}
+
+.backtotop li {
+	font-family: Poppins;
+	font-size: 22px;
+}
+
+.backtotop a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.backtotop a:hover{
+	color:tomato;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BURGER MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -61,7 +316,7 @@ p {
 {
   display: block;
   position: relative;
-  top: 50px;
+  top: 60px;
   left: 50px;
   z-index: 1;
   -webkit-user-select: none;
