@@ -1,3 +1,3 @@
-# 3.4-3.8-Interaction-Project
+# 3.4-3.8-Interaction-Project Main Design
 
-Using my designs I will attempt to recreate my two basic designs and eventually create a design based on the best aspects of each design.
+At this point I have created every page on my site as simple as I can, my focus now is to style all elements i feel need to be changed
