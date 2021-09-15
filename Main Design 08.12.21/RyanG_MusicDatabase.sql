@@ -3,7 +3,7 @@
 -- Host: localhost	Database: RyanG_MusicDatabase
 -- ------------------------------------------------------
 -- Server version 	8.0.26-0ubuntu0.20.04.2
--- Date: Mon, 09 Aug 2021 20:44:06 +0000
+-- Date: Wed, 11 Aug 2021 23:34:08 +0000
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -323,4 +323,4 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on: Mon, 09 Aug 2021 20:44:06 +0000
+-- Dump completed on: Wed, 11 Aug 2021 23:34:08 +0000
