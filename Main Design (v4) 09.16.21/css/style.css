@@ -13,7 +13,7 @@ body {
 .wrapper {
 	height: auto;
 	display: grid;
-	grid-template-rows: 200px auto 200px;
+	grid-template-rows: 200px auto auto;
 	grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
 }
 
@@ -64,6 +64,17 @@ body {
 	border: 3px solid black;
 }
 
+.supportlogincontent {
+	grid-column:3/5;
+	grid-row: 2;
+	z-index:3;
+	min-height:400px;
+	background-color:grey;
+	opacity: 80%;
+	padding: 5px;
+	border: 3px solid black;
+}
+
 .footer {
 	grid-column:1/8;
 	grid-row: 3;
@@ -71,6 +82,7 @@ body {
 	padding: 10px;
 	display:grid;
 	grid-template-columns: 50% 50%;
+	min-height:200px;
 }
 
 .foot1 {
@@ -176,8 +188,8 @@ Duration1, Size1 {
 heading2{
 	width: 99%;
 	display: grid;
-	grid-template-columns: 23% 22% 22% 22% 5% 5%;
-    grid-template-rows: 50px;
+	grid-template-columns: 23% 22% 22% 21% 5% 6%;
+    grid-template-rows: auto;
 	margin: 1px;
 	border: 1px solid black;
 	padding-left:1%;
@@ -188,21 +200,29 @@ loginheading2{
 	width: 99%;
 	display: grid;
 	grid-template-columns: 5% 20% 20% 20% 20% 7% 5%;
-    grid-template-rows: 50px;
+    grid-template-rows: auto;
 	margin: 1px;
 	border: 1px solid black;
 	padding-left:1%;
+	padding: 0px 5px;
 	background-color: white;
 }
 
-Songid2, Title2, Album2, Artist2, Genre2, Duration2, Size2 {
+Songid2 p, Title2 p, Album2 p, Artist2 p, Genre2 p, Duration2 p, Size2 p {
 	text-align:left;
 	font-family: Poppins;
-	font-size: 11px;
+	font-size:18px;
+	display: block;
+	margin: 3px 5px;
+	padding:0;
 	color: black;
 }
 
-Duration2, Size2 {
+Songid2 p {
+	text-align:center;
+}
+
+Duration2 p, Size2 p {
 	text-align:right;
 }
 
@@ -210,21 +230,53 @@ Duration2, Size2 {
 
 #loginform {
 	display:grid;
-	grid-template-columns:300px 800px;
-	grid-template-rows: 75px 75px;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto auto auto;
 	padding:0;
 	margin:0;
 }
 
+#loginform #multicolumn {
+	grid-column:1/3;
+	margin-bottom:10px;
+}
+
+#loginform #singlecolumn {
+	margin: 0 10px;
+}
+
+#loginh1 {
+	text-align:center;
+	margin: 3px 0px;
+}
+
 #inputbox {
-	width: 70%;
-	height:60px;
-	font-size:48px;
+	width: 95%;
+	height:24px;
+	font-size:18px;
 }
 
 #submitbutton {
-	width:80px;
-	height:20px;
+	width:100px;
+	height:32px;
+	font-size:24px;
+}
+
+#supporttext {
+	width:535px;
+	height:26px;
+	font-size:24px;
+}
+
+#supportspan {
+	font-family:Montserrat;
+	font-size:24px;
+}
+
+#supportsubmitbutton {
+	width:175px;
+	height:32px;
+	font-size:24px;
 }
 
 .admin-content {
@@ -243,7 +295,7 @@ Duration2, Size2 {
 }
 
 .admin-add-users {
-	grid-column: 1/3;
+	grid-column: 1/2;
 	border: 2px solid black;
 	padding-left: 2%;
 }
@@ -254,16 +306,21 @@ Duration2, Size2 {
 }
 
 .admin-delete-users {
-	grid-column: 1/3;
+	grid-column: 2/3;
 	border: 2px solid black;
 	padding-left: 2%;
 }
 
+#SupportTicket {
+	min-height:50px;
+	width:99%;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #HeadingLogo {
 	position: relative;
-	margin-left: 100px;
+	margin-left: 120px;
+	margin-top:10px;
 }
 
 .footer #SocialMedia {
@@ -279,7 +336,7 @@ Duration2, Size2 {
 .backtotop {
 	display: block;
 	position: fixed;
-	top: 680px;
+	top: 620px;
 	left: 95%;
 	padding: 15px;
 	outline:none;

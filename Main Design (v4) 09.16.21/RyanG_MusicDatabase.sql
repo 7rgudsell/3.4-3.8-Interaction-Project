@@ -3,7 +3,7 @@
 -- Host: localhost	Database: RyanG_MusicDatabase
 -- ------------------------------------------------------
 -- Server version 	8.0.26-0ubuntu0.20.04.2
--- Date: Wed, 11 Aug 2021 23:34:08 +0000
+-- Date: Wed, 15 Sep 2021 23:59:29 +0000
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -93,7 +93,7 @@ CREATE TABLE `fileDetails` (
 LOCK TABLES `fileDetails` WRITE;
 /*!40000 ALTER TABLE `fileDetails` DISABLE KEYS */;
 SET autocommit=0;
-INSERT INTO `fileDetails` VALUES (1,'2-30.mp3'),(2,'A Commotion.mp3'),(3,'Alabama Blues.mp3'),(4,'Alice\'s Restaurant Massacree.mp3'),(5,'All The Young Dudes.mp3'),(6,'Alligator Sky.mp3'),(7,'American Heart.mp3'),(8,'American Pie.mp3'),(9,'Aqualung.mp3'),(10,'Ashes By Now.mp3'),(11,'Big Jet Plane (Radio Edit).mp3'),(12,'Bird Song.mp3'),(13,'Boogie On Reggae Woman.mp3'),(14,'Brazilian Stomp.mp3'),(15,'Bring Me Home.mp3'),(16,'C\'est La Mort.mp3'),(17,'Chicken on a Raft.mp3'),(18,'Don\'t Think Twice, It\'s All Right.mp3'),(19,'Eagle Plume Dancer.mp3'),(20,'Earth And Sky.mp3'),(21,'Everybody\'s Fool.mp3'),(22,'Fake Tales Of San Francisco.mp3'),(23,'Fear.mp3'),(24,'Fields of Gold.mp3'),(25,'Fire.mp3'),(26,'Fortune Teller.mp3'),(27,'Free Bird Live [Fox Theater].mp3'),(28,'French Letter.mp3'),(29,'Got The Love - 2009.mp3'),(30,'Great Southern Land.mp3'),(31,'Hallelujah.mp3'),(32,'Hard Travelin\' Hootenanny.mp3'),(33,'He Aha Ra Te Manu.mp3'),(34,'Hineraukatauri (Goddess of Music).mp3'),(35,'Hopeless Wanderer.mp3'),(36,'How do you plead.mp3'),(37,'How Sweet Can You Get - 2009.mp3'),(38,'If I Ever Leave This World Alive.mp3'),(39,'I\'ll Be Long Gone.mp3'),(40,'I\'m in the Mood for Dancing.mp3'),(41,'Leave a Light On.mp3'),(42,'Like someone in love.mp3'),(43,'Little Black Book.mp3'),(44,'Lost for Words.mp3'),(45,'Maggie.mp3'),(46,'Maggie.mp3'),(47,'Marijuana.mp3'),(48,'Marooned.mp3'),(49,'Mary.mp3'),(50,'Mary.mp3'),(51,'Messages.mp3'),(52,'Northern Lights.mp3'),(53,'Now There\'s That Fear Again.mp3'),(54,'One Golden Rule.mp3'),(55,'One Slip.mp3'),(56,'Parihaka.mp3'),(57,'Radioactive.mp3'),(58,'River.mp3'),(59,'Sarah Victoria.mp3'),(60,'Shower the People.mp3'),(61,'Shower the People.mp3'),(62,'Silent Warrior.mp3'),(63,'Simple Love [#].mp3'),(64,'Slice Of Heaven.mp3'),(65,'Slice of Heaven.mp3'),(66,'Slice of Heaven.mp3'),(67,'Slow Train.mp3'),(68,'Spanish Train.mp3'),(69,'Stay.mp3'),(70,'Stay.mp3'),(71,'Steal Your Heart Away.mp3'),(72,'Sweet Baby James.mp3'),(73,'Sweet Baby James.mp3'),(74,'Tell me.mp3'),(75,'Tell me.mp3'),(76,'The Forest Awakes.mp3'),(77,'The Horses.mp3'),(78,'The Mother.mp3'),(79,'The Sodom And Gomorrah Show.mp3'),(80,'The Times They Are A-Changin\'.mp3'),(81,'The Traveller.mp3'),(82,'The Woods.mp3'),(83,'Til We Outnumber \'Em (This Land Is You Land).mp3'),(84,'Turn! Turn! Turn!.mp3'),(85,'Turn! Turn! Turn!.mp3'),(86,'Unchain My Heart [90\'s Version].mp3'),(87,'Waiting For You.mp3'),(88,'We can let it happen tonight.mp3'),(89,'When Girls Collide.mp3'),(90,'When You Come Back Home.mp3'),(91,'You Probably Couldn\'t See For The Lights, But You Were Staring Straight At Me.mp3'),(92,'You Were Mine.mp3'),(93,'You\'re Just a Country Boy.mp3'),(94,'Zombie.mp3');
+INSERT INTO `fileDetails` VALUES (1,'2-30.mp3'),(2,'A Commotion.mp3'),(3,'Alabama Blues.mp3'),(4,'Alice\'s Restaurant Massacree.mp3'),(5,'All The Young Dudes.mp3'),(6,'Alligator Sky.mp3'),(7,'American Heart.mp3'),(8,'American Pie.mp3'),(9,'Aqualung.mp3'),(10,'Ashes By Now.mp3'),(11,'Big Jet Plane (Radio Edit).mp3'),(12,'Bird Song.mp3'),(13,'Boogie On Reggae Woman.mp3'),(14,'Brazilian Stomp.mp3'),(15,'Bring Me Home.mp3'),(16,'C\'est La Mort.mp3'),(17,'Chicken on a Raft.mp3'),(18,'Don\'t Think Twice, It\'s All Right.mp3'),(19,'Eagle Plume Dancer.mp3'),(20,'Earth And Sky.mp3'),(21,'Everybody\'s Fool.mp3'),(22,'Fake Tales Of San Francisco.mp3'),(23,'Fear.mp3'),(24,'Fields of Gold.mp3'),(25,'Fire.mp3'),(26,'Fortune Teller.mp3'),(27,'Free Bird Live [Fox Theater].mp3'),(28,'French Letter.mp3'),(29,'Got The Love - 2009.mp3'),(30,'Great Southern Land.mp3'),(31,'Hallelujah.mp3'),(32,'Hard Travelin\' Hootenanny.mp3'),(33,'He Aha Ra Te Manu.mp3'),(34,'Hineraukatauri (Goddess of Music).mp3'),(35,'Hopeless Wanderer.mp3'),(36,'How do you plead.mp3'),(37,'How Sweet Can You Get - 2009.mp3'),(38,'If I Ever Leave This World Alive.mp3'),(39,'I\'ll Be Long Gone.mp3'),(40,'I\'m in the Mood for Dancing.mp3'),(41,'Leave a Light On.mp3'),(42,'Like someone in love.mp3'),(43,'Little Black Book.mp3'),(44,'Lost for Words.mp3'),(45,'Maggie.mp3'),(46,'Maggie.mp3'),(47,'Marijuana.mp3'),(48,'Marooned.mp3'),(49,'Mary.mp3'),(50,'Mary.mp3'),(51,'Messages.mp3'),(52,'Northern Lights.mp3'),(53,'Now There\'s That Fear Again.mp3'),(54,'One Golden Rule.mp3'),(55,'One Slip.mp3'),(56,'Parihaka.mp3'),(57,'Radioactive.mp3'),(58,'River.mp3'),(59,'Sarah Victoria.mp3'),(60,'Shower the People.mp3'),(61,'Shower the People.mp3'),(62,'Silent Warrior.mp3'),(63,'Simple Love.mp3'),(64,'Slice Of Heaven.mp3'),(65,'Slice of Heaven.mp3'),(66,'Slice of Heaven.mp3'),(67,'Slow Train.mp3'),(68,'Spanish Train.mp3'),(69,'Stay.mp3'),(70,'Stay.mp3'),(71,'Steal Your Heart Away.mp3'),(72,'Sweet Baby James.mp3'),(73,'Sweet Baby James.mp3'),(74,'Tell me.mp3'),(75,'Tell me.mp3'),(76,'The Forest Awakes.mp3'),(77,'The Horses.mp3'),(78,'The Mother.mp3'),(79,'The Sodom And Gomorrah Show.mp3'),(80,'The Times They Are A-Changin\'.mp3'),(81,'The Traveller.mp3'),(82,'The Woods.mp3'),(83,'Til We Outnumber \'Em (This Land Is You Land).mp3'),(84,'Turn! Turn! Turn!.mp3'),(85,'Turn! Turn! Turn!.mp3'),(86,'Unchain My Heart [90\'s Version].mp3'),(87,'Waiting For You.mp3'),(88,'We can let it happen tonight.mp3'),(89,'When Girls Collide.mp3'),(90,'When You Come Back Home.mp3'),(91,'You Probably Couldn\'t See For The Lights, But You Were Staring Straight At Me.mp3'),(92,'You Were Mine.mp3'),(93,'You\'re Just a Country Boy.mp3'),(94,'Zombie.mp3');
 /*!40000 ALTER TABLE `fileDetails` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -258,6 +258,35 @@ COMMIT;
 --
 
 --
+-- Table structure for table `support`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `support` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Email` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `SupportTicket` varchar(500) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `support`
+--
+
+LOCK TABLES `support` WRITE;
+/*!40000 ALTER TABLE `support` DISABLE KEYS */;
+SET autocommit=0;
+INSERT INTO `support` VALUES (21,'ryangudsell','nbiujbsb z bbvzbz');
+/*!40000 ALTER TABLE `support` ENABLE KEYS */;
+UNLOCK TABLES;
+COMMIT;
+
+-- Dumped table `support` with 1 row(s)
+--
+
+--
 -- Table structure for table `titleDetails`
 --
 
@@ -277,7 +306,7 @@ CREATE TABLE `titleDetails` (
 LOCK TABLES `titleDetails` WRITE;
 /*!40000 ALTER TABLE `titleDetails` DISABLE KEYS */;
 SET autocommit=0;
-INSERT INTO `titleDetails` VALUES (1,'2:30'),(2,'A Commotion'),(3,'Alabama Blues'),(4,'Alice\'s Restaurant Massacree'),(5,'All The Young Dudes (David Bowie)'),(6,'Alligator Sky'),(7,'American Heart'),(8,'American Pie'),(9,'Aqualung'),(10,'Ashes By Now'),(11,'Big Jet Plane (Radio Edit)'),(12,'Bird Song'),(13,'Boogie On Reggae Woman'),(14,'Brazilian Stomp'),(15,'Bring Me Home'),(16,'C\'est La Mort'),(17,'Chicken on a Raft'),(18,'Don\'t Think Twice, It\'s All Right'),(19,'Eagle Plume Dancer'),(20,'Earth & Sky'),(21,'Everybody\'s Fool'),(22,'Fake Tales Of San Francisco'),(23,'Fields of Gold'),(24,'Fire'),(25,'Fortune Teller'),(26,'Free Bird Live [Fox Theater]'),(27,'French Letter'),(28,'Got The Love'),(29,'Great Southern Land'),(30,'Hallelujah'),(31,'Hard Travelin\' Hootenanny'),(32,'He Aha Ra Te Manu'),(33,'Hey'),(34,'Hineraukatauri (Goddess of Music)'),(35,'Hopeless Wanderer'),(36,'How do you plead'),(37,'How Sweet Can You Get'),(38,'I\'ll Be Long Gone'),(39,'I\'m in the Mood for Dancing'),(40,'If I Ever Leave This World Alive'),(41,'Leave a Light On'),(42,'Like Someone In Love'),(43,'Little Black Book'),(44,'Lost For Words'),(45,'Maggie'),(46,'Marijuana'),(47,'Marooned'),(48,'Mary'),(49,'Messages'),(50,'Northern Lights'),(51,'Now There\'s That Fear Again'),(52,'One Golden Rule'),(53,'One Slip'),(54,'Parihaka'),(55,'Radioactive'),(56,'River'),(57,'Sarah Victoria'),(58,'Shower the People'),(59,'Silent Warrior'),(60,'Simple Love [#]'),(61,'Slice of Heaven'),(62,'Slow Train'),(63,'Spanish Train'),(64,'Stay'),(65,'Steal Your Heart Away'),(66,'Sweet Baby James'),(67,'Tell me'),(68,'The Forest Awakes'),(69,'The Horses'),(70,'The Mother'),(71,'The Sodom And Gomorrah Show'),(72,'The Times They Are A-Changin\''),(73,'The Traveller'),(74,'The Woods'),(75,'Til We Outnumber \'Em (This Land Is You Land)'),(76,'Turn! Turn! Turn!'),(77,'Unchain My Heart [90\'s Version]'),(78,'Waiting For You'),(79,'We can let it happen tonight'),(80,'When Girls Collide'),(81,'When You Come Back Home'),(82,'You Probably Couldn\'t See For The Lights, But You Were Staring Straight At Me'),(83,'You Were Mine'),(84,'You\'re Just a Country Boy'),(85,'Zombie');
+INSERT INTO `titleDetails` VALUES (1,'2:30'),(2,'A Commotion'),(3,'Alabama Blues'),(4,'Alice\'s Restaurant Massacree'),(5,'All The Young Dudes (David Bowie)'),(6,'Alligator Sky'),(7,'American Heart'),(8,'American Pie'),(9,'Aqualung'),(10,'Ashes By Now'),(11,'Big Jet Plane (Radio Edit)'),(12,'Bird Song'),(13,'Boogie On Reggae Woman'),(14,'Brazilian Stomp'),(15,'Bring Me Home'),(16,'C\'est La Mort'),(17,'Chicken on a Raft'),(18,'Don\'t Think Twice, It\'s All Right'),(19,'Eagle Plume Dancer'),(20,'Earth & Sky'),(21,'Everybody\'s Fool'),(22,'Fake Tales Of San Francisco'),(23,'Fields of Gold'),(24,'Fire'),(25,'Fortune Teller'),(26,'Free Bird Live [Fox Theater]'),(27,'French Letter'),(28,'Got The Love'),(29,'Great Southern Land'),(30,'Hallelujah'),(31,'Hard Travelin\' Hootenanny'),(32,'He Aha Ra Te Manu'),(33,'Hey'),(34,'Hineraukatauri (Goddess of Music)'),(35,'Hopeless Wanderer'),(36,'How do you plead'),(37,'How Sweet Can You Get'),(38,'I\'ll Be Long Gone'),(39,'I\'m in the Mood for Dancing'),(40,'If I Ever Leave This World Alive'),(41,'Leave a Light On'),(42,'Like Someone In Love'),(43,'Little Black Book'),(44,'Lost For Words'),(45,'Maggie'),(46,'Marijuana'),(47,'Marooned'),(48,'Mary'),(49,'Messages'),(50,'Northern Lights'),(51,'Now There\'s That Fear Again'),(52,'One Golden Rule'),(53,'One Slip'),(54,'Parihaka'),(55,'Radioactive'),(56,'River'),(57,'Sarah Victoria'),(58,'Shower the People'),(59,'Silent Warrior'),(60,'Simple Love'),(61,'Slice of Heaven'),(62,'Slow Train'),(63,'Spanish Train'),(64,'Stay'),(65,'Steal Your Heart Away'),(66,'Sweet Baby James'),(67,'Tell me'),(68,'The Forest Awakes'),(69,'The Horses'),(70,'The Mother'),(71,'The Sodom And Gomorrah Show'),(72,'The Times They Are A-Changin\''),(73,'The Traveller'),(74,'The Woods'),(75,'Til We Outnumber \'Em (This Land Is You Land)'),(76,'Turn! Turn! Turn!'),(77,'Unchain My Heart [90\'s Version]'),(78,'Waiting For You'),(79,'We can let it happen tonight'),(80,'When Girls Collide'),(81,'When You Come Back Home'),(82,'You Probably Couldn\'t See For The Lights, But You Were Staring Straight At Me'),(83,'You Were Mine'),(84,'You\'re Just a Country Boy'),(85,'Zombie');
 /*!40000 ALTER TABLE `titleDetails` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -323,4 +352,4 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on: Wed, 11 Aug 2021 23:34:08 +0000
+-- Dump completed on: Wed, 15 Sep 2021 23:59:29 +0000

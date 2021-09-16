@@ -64,16 +64,18 @@
 				</div>
 				
 				<div class="head2">
-					<h1 align="right"><a href="#">Support </a> | <a href="#">Log In</a></h1>
-					<form method="post">
-						<input type="submit" value="Log Out" name="Log_Out"/>
-						<?php
-							if(isset($_POST['Log_Out'])) {
+					<?php
+						if(isset($_SESSION['login_user'])) {
+							echo '<h1 align="right"><a href="support.php">Support</a></h1>;
+							<form method="post">
+								<input type="submit" value="Log Out" name="Log_Out"/>';
+								if(isset($_POST['Log_Out'])) {
 								$_SESSION = array();
 								header("location: login.php");
-							}
-						?>
-					</form>
+								}
+							echo '</form>';
+						}
+					?>
 				</div>
 			</div>
 		

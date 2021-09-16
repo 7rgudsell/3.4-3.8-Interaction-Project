@@ -48,7 +48,7 @@
 					<ul id="menu">
 						<!-- <a href="#"><li>Home</li></a>  HIDE CURRENT PAGE LINK  -->
 						<a href="home.php"><li><h3>Home</h3></li></a>
-						<a href="alltrackstitle.php"><li><h3>All Tracks (Title)</h3></li></a>
+						<a href="alltracksgenre.php"><li><h3>All Tracks (Genre)</h3></li></a>
 						<a href="login.php"><li><h3>Log In</h3></li></a>
 						<a href="support.php"><li><h3>Support</h3></li></a>
 					</ul>
@@ -66,16 +66,18 @@
 				</div>
 				
 				<div class="head2">
-					<h1 align="right"><a href="#">Support </a> | <a href="#">Log In</a></h1>
-					<form method="post">
-						<input type="submit" value="Log Out" name="Log_Out"/>
-						<?php
-							if(isset($_POST['Log_Out'])) {
+					<?php
+						if(isset($_SESSION['login_user'])) {
+							echo '<h1 align="right"><a href="support.php">Support</a></h1>;
+							<form method="post">
+								<input type="submit" value="Log Out" name="Log_Out"/>';
+								if(isset($_POST['Log_Out'])) {
 								$_SESSION = array();
 								header("location: login.php");
-							}
-						?>
-					</form>
+								}
+							echo '</form>';
+						}
+					?>
 				</div>
 			</div>
 		
@@ -107,7 +109,7 @@
 					JOIN musicToArtist AS j ON m.Song_ID = j.Song_ID JOIN artistDetails AS r ON r.Artist_ID = j.Artist_ID
 					JOIN musicToGenre AS h ON m.Song_ID = h.Song_ID JOIN genreDetails AS g ON g.Genre_ID = h.Genre_ID
 					GROUP BY m.Song_ID
-					ORDER BY Genre ASC, Artist ASC');
+					ORDER BY t.Title DESC, Artist DESC');
 			
 					//Runs and stores the query using the variables $con (see nav.php) and $query
 					$result = mysqli_query($conn,$query);
@@ -134,7 +136,7 @@
 					}
 				?>
 					
-					<h1><span class="h1span"><?php echo sprintf('%02d:%02d:%02d', ($timetot/3600),($timetot/60%60), $timetot%60);?></span></h1>
+					<h1><span class="h1span">Total Playlist Runtime: <?php echo sprintf('%02d:%02d:%02d', ($timetot/3600),($timetot/60%60), $timetot%60);?></span></h1>
 					
 				</div>
 			
@@ -145,7 +147,7 @@
 				<p>Useful Links: <br> </p>
 					<ul>
 						<a href="home.php"><li>Home</li></a>
-						<a href="alltrackstitle.php"><li>All Tracks (Title)</li></a>
+						<a href="alltracks.php"><li>All Tracks (Genre)</li></a>
 						<a href="login.php"><li>Log In</li></a>
 						<a href="support.php"><li>Support</li></a>
 					</ul>

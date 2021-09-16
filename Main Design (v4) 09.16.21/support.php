@@ -1,34 +1,11 @@
-<?php
-	ob_start();
+<?php 
 	session_start();
-		$error = NULL;
-		if($_SERVER["REQUEST_METHOD"] == "POST") {
-			//connect.php (tells where to connect servername, dbasename, username, password)
-			require "MusicDatabase_mysqli.php";
-			//username and password sent from form
-			$myusername = mysqli_real_escape_string($conn,$_POST["username"]);
-			$mypassword = mysqli_real_escape_string($conn,$_POST["password"]);
-			
-			$query = "SELECT Username FROM users WHERE Username = '$myusername' and Password = '$mypassword'";
-			
-			$result = mysqli_query($conn,$query);
-			$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-			
-			$count = mysqli_num_rows($result);
-			
-			//if result matched $myusername and $mypassword, table must be 1 row
-			if($count == 1 && $_SESSION['login_user'] = $myusername) {
-				if($myusername == "Admin" || $myusername == "Graeme") {
-					header("location: admin.php");
-					require 'adminnav.php';
-				} else {
-					header("location: home.php");
-				}
-			} else {
-				$error = "ERROR! Your login name or password is invalid";
-				}
-			}
-	ob_end_flush();
+	if(!isset($_SESSION['login_user'])){
+		header("location: login.php");
+		}
+	else {
+		$User = $_SESSION['login_user'];
+	}
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +51,8 @@
 						<a href="home.php"><li><h3>Home</h3></li></a>
 						<a href="alltrackstitle.php"><li><h3>All Tracks (Title)</h3></li></a>
 						<a href="alltracksgenre.php"><li><h3>All Tracks (Genre)</h3></li></a>
-						<a href="support.php"><li><h3>Support</h3></li></a>
+						<a href="login.php"><li><h3>Log In</h3></li></a>
+						<!--<a href="support.php"><li><h3>Support</h3></li></a>-->
 					</ul>
 				</div>
 			</div>
@@ -86,29 +64,58 @@
 				</div>
 				
 				<div class="head2">
-					<h1 align="right"><a href="#">Support </a> | <a href="#">Log In</a></h1>
+					<?php
+						if(isset($_SESSION['login_user'])) {
+							echo '<br><br><br><br><form method="post">
+								<input type="submit" value="Log Out" name="Log_Out"/>';
+								if(isset($_POST['Log_Out'])) {
+								$_SESSION = array();
+								header("location: login.php");
+								}
+							echo '</form>';
+						}
+					?>
 				</div>
+					
 			</div>
 		
 			<div class="body">
 				
-				<div class="content">
+				<div class="supportlogincontent">
 					
-					<div class="section3">
-						<h1><form method="post" id="loginform">
+					<h1> <!-- records the users current name and feeds back to them, also in home.php -->
+						<?php echo "<h1 style='text-align:center;'><span class='h1span'>&nbspHello " . $_SESSION['login_user'] . "!&nbsp</span></h1>"; 
+						require "MusicDatabase_mysqli.php";
+						print "<h3 style='text-align:center;'><span class='h1span'>&nbspConnected to server!&nbsp</span></h3><br>";
+						?>
+					</h1>
+						<h1 id="smallh1" align="center">Please write a support ticket and we will send feedback to your email!</h1>
+						<h3><form method="post">
+							<div><label for="login">Email:</label>
+							<input type="text" name="Email" id="supporttext" placeholder="Enter email"/></div>
 							
-							<label for="login">Username:</label>
+							<div><label for="login">Ticket:</label><br>
+							<textarea name="SupportTicket" placeholder="Write your ticket in this box for it to be forwarded to an administrator..." rows="8" cols="52" wrap="soft" maxlength="800" style="overflow:hidden; resize:none; font-family:Montserrat; font-size:18px;"></textarea></div>
 							
-							<input type="text" name="username" placeholder="Enter user name" id="inputbox"/>
-							
-							<label for="login">Password:</label>
-							
-							<input type="text" name="password" placeholder="Enter user password" id="inputbox"/>
-							
-							<input type="submit" value="Submit" id="submitbutton"/><br>
-							
-						</form></h1>
-						<h3><?php echo $error; ?></h3>
+							<div><input type="submit" value="Send Ticket!" name="UserSupport" id="supportsubmitbutton"/></div>
+						</form></h3>
+
+						<br><?php 
+							if(isset($_POST['UserSupport'])) {
+								$Email = $_POST['Email'];
+								$SupportTicket = $_POST['SupportTicket'];
+
+								//create a variable to store sql code for the 'Add Users' query
+								$supportquery = "INSERT INTO support(Email, SupportTicket) VALUES('$Email', '$SupportTicket')";
+
+								if(mysqli_query($conn,$supportquery)) {
+									echo "<h3>Feedback sent!</h3>";
+								} else {
+									echo "<h3>Feedback not sent.</h3>";
+								}
+							}
+						?>
+
 					</div>
 					
 				</div>
@@ -122,6 +129,7 @@
 						<a href="home.php"><li>Home</li></a>
 						<a href="alltrackstitle.php"><li>All Tracks (Title)</li></a>
 						<a href="alltracksgenre.php"><li>All Tracks (Genre)</li></a>
+						<a href="login.php"><li>Log In</li></a>
 						<a href="support.php"><li>Support</li></a>
 					</ul>
 				<p>Copyright 2021, Ryan Gudsell &copy </p>
